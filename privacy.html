@@ -26,7 +26,7 @@
 <body>
 <header><div>
   <h1>OffChat Privacy Policy</h1>
-  <p>Last updated: 29 October 2026 (changed: how long reports are kept)</p>
+  <p>Last updated: 30 October 2026 (added: catching up on missed channel messages, erasing all data)</p>
 </div></header>
 <main>
 
@@ -48,8 +48,9 @@
     <li>Your messages, photos and voice messages, your contacts and channels, and your profile (name, photo and bio).</li>
     <li>Your identity keys. They are created on your phone and protected by the Android Keystore. They never leave your phone.</li>
   </ul>
-  <p>OffChat excludes this data from Android cloud backups. Uninstalling the app deletes all of it. You can also delete
-  single messages, leave channels, or turn on disappearing messages.</p>
+  <p>OffChat excludes this data from Android cloud backups. Uninstalling the app deletes all of it, and so does
+  Settings → Erase All Data, which also gives you a new identity. You can also delete single messages, leave
+  channels, or turn on disappearing messages.</p>
 </section>
 
 <section>
@@ -64,6 +65,10 @@
     <li><strong>Relaying.</strong> To reach further, messages can hop through other OffChat users’ phones. Those phones
       can't read encrypted messages. A relaying phone may keep an encrypted message briefly in memory until the
       recipient comes into range.</li>
+    <li><strong>Catching up.</strong> When another OffChat phone comes into range, the two phones can hand each other the
+      channel text messages from the last 24 hours that the other one missed. They are passed on exactly as they were
+      sent, signed by their author, so messages in password-protected channels stay encrypted. Photos, voice messages
+      and direct messages are never passed on this way.</li>
   </ul>
 </section>
 
