@@ -26,7 +26,7 @@
 <body>
 <header><div>
   <h1>OffChat Privacy Policy</h1>
-  <p>Last updated: 30 October 2026 (added: catching up on missed channel messages, erasing all data)</p>
+  <p>Last updated: 1 November 2026 (added: Find Friend, verifying in person both ways)</p>
 </div></header>
 <main>
 
@@ -69,6 +69,27 @@
       channel text messages from the last 24 hours that the other one missed. They are passed on exactly as they were
       sent, signed by their author, so messages in password-protected channels stay encrypted. Photos, voice messages
       and direct messages are never passed on this way.</li>
+    <li><strong>Verifying in person.</strong> Your QR code contains a random one-time code. When a friend scans it, their
+      phone sends that code back to yours, end-to-end encrypted, so both of you are marked as verified. The code changes
+      after every use and is never stored.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Find Friend</h2>
+  <p>Find Friend shows you which way a friend is and how far, for example when you lose each other in a crowd. It only
+  works between two people who have verified each other in person by scanning QR codes.</p>
+  <ul>
+    <li><strong>Nothing is shared unless you agree.</strong> When a friend asks to find you, you choose: allow once, allow
+      for one hour, always allow that friend, or decline. You can stop sharing, or take back “always allow”, at any time
+      in the friend's info screen.</li>
+    <li><strong>What is sent.</strong> While you share, your phone sends your approximate position (latitude, longitude and
+      how accurate it is) every few seconds, end-to-end encrypted, only to that friend's phone. A sharing session ends
+      after one hour at most. Other phones may relay these messages but can't read them, and never keep them for later.</li>
+    <li><strong>What the friend sees.</strong> Only a direction arrow and a distance, never a map or your address.</li>
+    <li><strong>What is kept.</strong> Nothing. Positions are not stored on either phone, and we (the developer) never
+      receive them. The person looking for you never sends their own position.</li>
+    <li>On Android, your position is only sent while OffChat is open on your phone.</li>
   </ul>
 </section>
 
@@ -87,7 +108,9 @@
   <h2>Permissions</h2>
   <ul>
     <li><strong>Nearby devices (Bluetooth) and Wi-Fi</strong>: to find and connect to nearby phones. OffChat doesn't use these to determine your location.</li>
-    <li><strong>Location</strong> (Android 12 and older only): Android requires it for Bluetooth scanning on those versions. OffChat doesn't read or store your location.</li>
+    <li><strong>Location</strong>: used for Find Friend, only while you look for a friend or share your position with a
+      friend you allowed (see above). On Android 12 and older, Android also requires it for Bluetooth scanning. OffChat
+      never stores your location.</li>
     <li><strong>Microphone</strong>: only while you record a voice message.</li>
     <li><strong>Notifications</strong>: to tell you about new messages.</li>
     <li><strong>Camera</strong>: OffChat uses Google's code scanner and your camera app to scan QR codes and take photos. It never gets direct access to your camera.</li>
